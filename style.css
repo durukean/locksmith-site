@@ -1,0 +1,23 @@
+:root{--bg:#0b111c;--card:#151f31;--edge:#26324a;--ink:#e9e7e1;--ink2:#b4b8c0;--ink3:#7d8594;--brass:#cfa24e;--signal:#5fd4c8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg) radial-gradient(120% 60% at 95% -5%,rgba(143,180,232,.18),transparent 60%) no-repeat;color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:28px 20px 72px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:30px;flex-wrap:wrap}
+.wm{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font:700 20px/1 "Avenir Next Condensed","Arial Narrow",system-ui,sans-serif;letter-spacing:5px}
+.wm img{width:34px;height:34px;border-radius:8px}
+nav a{color:var(--ink2);text-decoration:none;font-weight:600;margin-left:16px;font-size:15px}
+nav a:hover{color:var(--signal)}
+h1{font:700 40px/1.1 "Avenir Next Condensed","Arial Narrow",system-ui,sans-serif;letter-spacing:3px;margin:0 0 12px;text-transform:uppercase}
+h2{font:700 20px "Avenir Next Condensed","Arial Narrow",system-ui,sans-serif;letter-spacing:2px;text-transform:uppercase;margin:34px 0 8px}
+.rule{width:44px;height:2px;background:var(--signal);margin:0 0 18px}
+p{margin:0 0 12px;color:var(--ink2)} b{color:var(--ink)} a{color:var(--signal)}
+.card{background:var(--card);border:1px solid var(--edge);border-radius:16px;padding:18px 20px;margin:14px 0}
+.muted{color:var(--ink3);font-size:14px}
+.hero{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:center;margin:6px 0 20px}
+.hero img{width:120px;height:120px;border-radius:26px;box-shadow:0 12px 40px rgba(0,0,0,.5)}
+.tag{color:var(--signal);font:600 13px "Avenir Next Condensed","Arial Narrow",system-ui,sans-serif;letter-spacing:5px;text-transform:uppercase}
+.shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:22px 0}
+.shots img{width:100%;border-radius:14px;border:1px solid var(--edge)}
+.btn{display:inline-block;background:linear-gradient(#f3d98e,#cfa24e 55%,#8a6a2a);color:#0b111c;text-decoration:none;font-weight:800;padding:13px 22px;border-radius:999px;letter-spacing:1px}
+ul{padding-left:20px;color:var(--ink2)} li{margin:4px 0}
+@media (max-width:560px){.hero{grid-template-columns:1fr}.shots{grid-template-columns:1fr 1fr}.shots img:last-child{display:none}h1{font-size:32px}}
